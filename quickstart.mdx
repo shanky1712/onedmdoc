@@ -1,80 +1,43 @@
 ---
-title: "Quickstart"
-description: "Start building awesome documentation in minutes"
+title: "Whatsapp Settings"
+description: "This page allows you to connect your whatsapp account."
 ---
+## How to connect manually 
 
-## Get started in three steps
 
-Get your documentation site running locally and make your first customization.
+## How to connect via Embedded Signup
 
-### Step 1: Set up your local environment
+## How to generate permanent token
+
+The default whatsapp tokens expire after a few hours as they are normally used for testing. You need to create a permanent token instead if you don’t want this. Follow these steps to create a permanent access token for your WhatsApp Business account:
+
+1. Sign into the Meta Business Suite https://www.facebook.com/business/tools/meta-business-suite.
+2. Select your business account in the top-left dropdown menu and click its Settings(gear) icon.
+3. Navigate to Users > System users.
+4. Click the Add button and accept it.
+5. In the Create system user dialog box, fill in the System username section.
+6. Then select the System user role as ‘Admin’ and click the Create system user button.
+<Warning>
+This step is only necessary if an admin user has not already been created. If an admin user already exists, you can use this for token generation.
+</Warning>
+7. On the same page, click the Assign Assets button.
+8. Proceed to Select asset type, click on Apps from the left, and select assets from the list of available apps.
+9. Enable the Full control toggle button for managing your app and click the Assign assets button.
+10. Click the Generate token button.
+11. Select the desired app from the dropdown (Select App) and click Next.
+12. Set the token expiration period and click Next.
+13. Scroll to Assign Permissions and select whatsapp_business_messaging and whatsapp_business_management from the list. Click the Generate Token button at the bottom.
+14. Copy the Token and paste it to the WhatsApp Token field on the Swiftchats Whatsapp Configuration page.
+
+## Common Issues
 
 <AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
-    
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
+  <Accordion title="When sending campaigns, they only appear as 'accepted' but the recipient does not receive them?">
+    Make sure you have added a payment method to the customer’s Meta Business account.
   </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
-    
-    <Tip>Your preview updates automatically as you edit files.</Tip>
+
+  <Accordion title="Why does the customer have to pay for each conversation on Meta Business account than through us?" icon="alien-8bit">
+    You need to be a “Solution Partner” in order for you to be able to manage billing on behalf of your customers. One of the prerequisites of being a solution Partner is to have Embedded Signup. Check here https://business.whatsapp.com/partners/become-a-partner
   </Accordion>
+
 </AccordionGroup>
-
-### Step 2: Deploy your changes
-
-<AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
-    
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
-
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
-
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
-  </Accordion>
-</AccordionGroup>
-
-### Step 3: Go live
-
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
-</Accordion>
-
-## Next steps
-
-Now that you have your docs running, explore these key features:
-
-<CardGroup cols={2}>
-
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
-</Card>
-
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
-</Card>
-
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
-</Card>
-
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
-</Card>
-
-</CardGroup>
-
-<Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
-</Note>

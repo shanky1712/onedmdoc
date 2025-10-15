@@ -1,0 +1,78 @@
+---
+title: 'Contacts'
+description: 'Manage, import, and export contacts with ease.'
+---
+
+The Contacts module is designed to help you efficiently manage all contact-related operations. It enables users to add, edit, delete, and star contacts, along with powerful tools for bulk import and export—ideal for handling large contact lists.
+
+<Warning>
+Note: The number of contacts a user can add is limited based on their subscription plan.
+For trial accounts, you can configure the contact limit by navigating to:
+Settings > Subscription Settings & under Trial Period Limits change the Contacts Limit
+</Warning>
+
+## Bulk Import
+
+Quickly import multiple contacts at once using a CSV or Excel file. The import process automatically includes all your configured dynamic contact fields, ensuring comprehensive data import.
+​
+## Step 1: Download the Import Template
+
+Before importing contacts, you should download the import template which includes all your configured dynamic contact fields:
+1. Navigate to the Contacts page
+2. Click on Import Contacts
+3. Click Download Template to get the latest template with your current dynamic contact fields
+
+<Info>Important: Always download the template before importing to ensure you have the latest dynamic contact fields as configured in your settings.</Info>
+
+## Step 2: Required Column Mapping
+
+The template will include these standard fields plus your custom dynamic contact fields:
+
+Standard Fields:
+
+- First name (Required)
+- Last name
+- Phone (Required) — Must start with the country code
+- Email
+- Group name
+- Street
+- City
+- State
+- Zip
+- Country
+
+Dynamic Contact Fields:
+
+- All custom fields you’ve configured in Settings > Contact Fields will automatically appear as columns in the template
+<Info>If a group name does not already exist, it will be created automatically. To assign a contact to multiple groups, separate the group names in the same cell using a pipe symbol (|).Example: Group 1 | Group 2​</Info>
+## Step 3: Import Process
+
+1. Fill in your contact data using the downloaded template
+2. Save the file as CSV or Excel format
+3. Upload the file through the import interface
+4. Review the import summary showing successful and failed imports
+​
+## Import Rules & Validation
+- Contacts that are duplicates of existing contacts will not be added. This includes duplicates found within the uploaded file.
+- Contacts with incorrectly formatted phone numbers (e.g., missing country code) will be skipped during import.
+- Dynamic contact fields are automatically mapped based on column headers matching your configured field names
+- Empty dynamic field columns will be stored as null values
+​
+## Bulk Export
+Export your entire contact list or selected contacts to an Excel file for backup, reporting, or integration with other systems.
+​
+## Export Features
+- Complete Data Export: Includes all standard contact fields plus your configured dynamic contact fields
+- Multiple Formats: Export as CSV or Excel (XLSX) format
+- Group Information: Contact group assignments are included in the export
+- Address Details: Full address information (street, city, state, zip, country) is exported
+- Dynamic Fields: All your custom contact fields and their values are included in the export
+​
+## Export Process
+1. Navigate to the Contacts page
+2. Select the contacts you want to export (or export all)
+3. Click Export and choose your preferred format
+4. The exported file will contain all contact data including dynamic fields
+​
+## Important Items To Note
+- If you delete a contact and later re-add it, you will not be able to access previous chat history associated with that contact. Once deleted, the link to past conversations is permanently removed.

@@ -1,0 +1,33 @@
+---
+title: 'Campaigns'
+description: ''
+---
+
+The campaigns module allows users to create and manage messaging campaigns efficiently. Within this module, users can customize message templates by adding static or dynamic variables. This feature enhances campaign personalization and ensures that messages are tailored to individual recipients, improving engagement and communication effectiveness.
+
+## Status Definition
+
+- Accepted: Message has been delivered to whatsapp terminal
+- Sent: Number of messages sent
+- Delivered: Number of messages that have been delivered to recipients
+- Read: Number of messages that have been delivered and read (Only works if the end user has turned on read receipts in their whatsapp account)
+- Failed: Number of messages that have not been sent
+​
+## FAQs
+
+<AccordionGroup>
+  <Accordion title="All campaign message status is failed">
+    Failed campaign message status can be due to several factors, such as:
+    - No payment method added to Meta: [Click here](https://business.facebook.com/settings/whatsapp-business-accounts/) to check out how to add a payment method to Meta.
+    - Locked Meta business account: Confirm that your account has not been locked.
+    - Blocked number: Recipient has blocked your number.
+  </Accordion>
+
+  <Accordion title="Campaign messages are not being sent?">
+    If your campaign messages are not being sent check the following:
+    - Confirm whether you have set up your timezone correctly.
+    - Check if your whatsapp settings are okay
+    - Check if your Meta business account has been locked
+  </Accordion>
+
+</AccordionGroup>
