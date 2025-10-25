@@ -37,7 +37,7 @@
       "anchors": [
         {
           "anchor": "Blog",
-          "href": "https://blog.onedm.co",
+          "href": "https://onedm.co/blog",
           "icon": "newspaper"
         }
       ]
@@ -57,7 +57,7 @@
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://onedm.co/login"
+      "href": "https://app.onedm.co/login"
     }
   },
   "footer": {
